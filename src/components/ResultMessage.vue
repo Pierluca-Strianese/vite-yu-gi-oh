@@ -5,6 +5,8 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <div>ResultMessage</div>
+</template>
 
 <style lang="scss" scoped></style>

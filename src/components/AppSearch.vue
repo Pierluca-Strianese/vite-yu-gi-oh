@@ -5,6 +5,8 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <div> Button</div>
+</template>
 
 <style lang="scss" scoped></style>
