@@ -17,9 +17,11 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-    width: calc(100% / 6 - 30px);
-    margin: 20px 15px;
+    width: calc(100% / 6 - 60px);
+    margin: 20px 10px;
+    padding: .5rem;
     background-color: #CA9249;
+    text-align: center;
 
     img {
         width: 100%;
@@ -27,6 +29,7 @@ export default {
 
     h2 {
         font-size: 1.2rem;
+        color: white;
     }
 }
 </style>

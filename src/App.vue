@@ -31,6 +31,12 @@ export default {
       .then(response => this.store.cards = response.data.data).catch((error) => {
         this.store.cards = []
       });
+
+    // Richiesta API tramite AXIOS per archetypes
+    axios.get('https://db.ygoprodeck.com/api/v7/archetypes.php')
+      .then((response) => {
+        this.store.archetypes = response.data;
+      })
   },
 }
 </script>
