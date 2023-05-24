@@ -9,7 +9,6 @@ export default {
   data() {
     return {
       store,
-
     }
   },
 
@@ -21,14 +20,19 @@ export default {
 
   created() {
     // Richiesta API tramite AXIOS
-    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
-      .then(response => this.store.CharacterList = response.data.card_sets);
+    axios
+      .get('https://db.ygoprodeck.com/api/v7/cardinfo.php', {
+        params: {
+          num: 20,
+          offset: 0,
+          fname: this.store.inputValue,
+        }
+      })
+      .then(response => this.store.cards = response.data.data).catch((error) => {
+        this.store.cards = []
+      });
   },
-
-};
-
-
-
+}
 </script>
 
 
