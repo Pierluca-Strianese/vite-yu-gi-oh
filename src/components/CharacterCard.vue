@@ -11,7 +11,7 @@ export default {
     <div class="card">
         <img :src="characterData.card_images[0].image_url" alt="">
         <h2>{{ characterData.name }}</h2>
-        <div class="species">{{ characterData.type }}</div>
+        <div class="species">{{ characterData.race }}</div>
     </div>
 </template>
 

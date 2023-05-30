@@ -19,7 +19,8 @@ export default {
 
 <template>
     <div class="container">
-        <CharacterCard v-for="character in store.cards" :key="character.id" class="card" :characterData="character" />
+        <CharacterCard v-for="character in store.CharacterList" :key="character.id" class="card"
+            :characterData="character" />
     </div>
 </template>
 
