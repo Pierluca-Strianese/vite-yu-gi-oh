@@ -31,3 +31,9 @@ export default {
         </div>
     </nav>
 </template>
+
+<style lang="scss" scoped>
+button {
+    margin-left: 1rem;
+}
+</style>
